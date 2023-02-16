@@ -8,11 +8,12 @@ TagManager:
   - Bounds
   - Goal
   - Fire
+  - Pin
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PinCheck
   - Water
   - UI
   - Book

@@ -8,8 +8,8 @@ public class Pin : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        // If it touches the ground, manage pin-List and add score.
-        if (other.tag == "Goal")
+        // If it touches the scoreTrigger, manage pin-List and add score.
+        if (other.tag == "Goal" && !isHit)
         {
             isHit = true;
             ScoreManager.instance.AddScore(this);

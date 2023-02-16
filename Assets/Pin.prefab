@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7270679377811827250}
   - component: {fileID: 7270679377811827251}
   - component: {fileID: 7270679377811827248}
+  - component: {fileID: 1706374005075088506}
   m_Layer: 0
   m_Name: Pin
   m_TagString: Untagged
@@ -102,6 +103,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1706374005075088506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270679377811827254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3f41aff4432a34c96c3d3dacbabb17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7270679378280900767
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,10 +125,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7270679378280900766}
   - component: {fileID: 7270679378280900765}
-  - component: {fileID: 7270679378280900764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ScoreTrigger
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,18 +160,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7270679378280900764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7270679378280900767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3f41aff4432a34c96c3d3dacbabb17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8739593863321182355
 PrefabInstance:
   m_ObjectHideFlags: 0

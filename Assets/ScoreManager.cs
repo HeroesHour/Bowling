@@ -8,10 +8,14 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] List<Pin> pins;
     int score = 0;
 
+    private void Awake()
+    {
+        if (instance == null) { instance = this; DontDestroyOnLoad(gameObject); }
+        else Destroy(gameObject);        
+    }
     void Start()
     {
-        if (instance == null) instance = this;
-        else Destroy(this);
+
     }
 
     void Update()
@@ -28,6 +32,7 @@ public class ScoreManager : MonoBehaviour
     }
     public void AddScore(Pin p)
     {
+        pins.Remove(p);
         score++;
         Debug.Log(score);
     }
