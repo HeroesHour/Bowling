@@ -9,6 +9,7 @@ TagManager:
   - Goal
   - Fire
   - Pin
+  - BowlingBall
   layers:
   - Default
   - TransparentFX
